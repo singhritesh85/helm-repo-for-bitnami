@@ -18,7 +18,7 @@ global:
   ##   - myRegistryKeySecretName
   ##
   imagePullSecrets: []
-  storageClass: ""
+  storageClass: "gp2"   ### EKS 1.30 and later do not support any default storage class, You need to explicitly mention the storage class.
   ## Compatibility adaptations for Kubernetes platforms
   ##
   compatibility:
